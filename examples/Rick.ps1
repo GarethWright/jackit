@@ -17,9 +17,9 @@ Function Invoke-RickRoll
     Start-Sleep -s 5
     $EndTime = (Get-Date).addseconds(199)
     # ghetto way to do this but it basically presses volume up to raise volume in a loop for 90 seconds
-    do {
-       $WscriptObject = New-Object -com wscript.shell
-       $WscriptObject.SendKeys([char]175)
-    }
-    until ((Get-Date) -gt $EndTime)
+  #  do {
+   #    $WscriptObject = New-Object -com wscript.shell
+   #    $WscriptObject.SendKeys([char]175)
+    #}
+  #  until ((Get-Date) -gt $EndTime)
 } Invoke-RickRoll
